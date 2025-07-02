@@ -1,0 +1,31 @@
+port: 3001
+db:
+  type: sqlite
+  storage: ./data/database.sqlite
+
+ssl:
+  enabled: false
+  port: 3443
+  provider: custom
+  format: pem
+  key: path/to/key.pem
+  cert: path/to/cert.pem
+  pfx: path/to/cert.pfx
+  passphrase: null
+  dhparam: null
+  domain: wiki.yourdomain.com
+  subscriberEmail: admin@example.com
+
+pool:
+  # min: 2
+  # max: 10
+
+bindIP: 0.0.0.0
+
+logLevel: info
+
+logFormat: default
+offline: false
+ha: false
+dataPath: ./data
+bodyParserLimit: 5mb 
