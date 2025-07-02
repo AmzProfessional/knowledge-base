@@ -5,4 +5,5 @@ db:
   user: root
   pass: TuWQAhqJitdVowKQGPcIsSzsuQqygOBL
   db: railway
-  ssl: false 
+  ssl:
+    rejectUnauthorized: false 
