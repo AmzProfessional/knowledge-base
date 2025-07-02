@@ -2,11 +2,11 @@ port: 3000
 
 db:
   type: postgres
-  host: ${PGHOST}
-  port: ${PGPORT}
-  user: ${PGUSER}
-  pass: ${PGPASSWORD}
-  db: ${PGDATABASE}
+  host: ${DB_HOST}
+  port: ${DB_PORT}
+  user: ${DB_USER}
+  pass: ${DB_PASS}
+  db: ${DB_NAME}
   ssl: true
 
 ssl:
