@@ -7,3 +7,10 @@ Thumbs.db
 .vscode/
 .idea/
 node_modules
+
+
+data
+.git
+.vscode
+.idea
+*.sqlite
