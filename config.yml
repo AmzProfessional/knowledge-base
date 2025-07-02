@@ -34,4 +34,4 @@ logFormat: default
 offline: false
 ha: false
 dataPath: ./data
-bodyParserLimit: 5mb 
+bodyParserLimit: 5mb
