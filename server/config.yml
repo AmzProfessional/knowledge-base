@@ -1,0 +1,8 @@
+db:
+  type: mysql
+  host: mysql.railway.internal
+  port: 3306
+  user: root
+  pass: TuWQAhqJitdVowKQGPcIsSzsuQqygOBL
+  db: railway
+  ssl: false 
