@@ -2,12 +2,13 @@ port: 3000
 
 db:
   type: mysql
-  host: ${DB_HOST}
-  port: ${DB_PORT}
-  user: ${DB_USER}
-  pass: ${DB_PASS}
-  db: ${DB_NAME}
-  ssl: true
+  host: mysql.railway.internal
+  port: 3306
+  user: root
+  pass: TuWQAhqJitdVowKQGPcIsSzsuQqygOBL
+  db: railway
+  ssl:
+    rejectUnauthorized: false
 
 ssl:
   enabled: false

@@ -21,15 +21,14 @@ port: 3000
 # - sqlite = SQLite 3.9 or later
 
 db:
-  type: postgres
-
-  # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
-  host: localhost
-  port: 5432
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
-  ssl: false
+  type: mysql
+  host: mysql.railway.internal
+  port: 3306
+  user: root
+  pass: yourpassword
+  db: railway
+  ssl:
+    rejectUnauthorized: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
   # -> Uncomment lines you need below and set `auto` to false
