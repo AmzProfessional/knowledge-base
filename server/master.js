@@ -87,6 +87,14 @@ module.exports = async () => {
   app.use(WIKI.auth.passport.initialize())
   app.use(WIKI.auth.authenticate)
 
+  // Middleware: Забороняємо кешування для всіх запитів
+  app.use((req, res, next) => {
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+    next();
+  });
+
   // ----------------------------------------
   // GraphQL Server
   // ----------------------------------------
